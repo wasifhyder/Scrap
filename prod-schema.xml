@@ -6,10 +6,10 @@
         <record name="Product Code" limit="many">
             <field name="DESCRIPTION" type="String"/>
             <field name="BRAND" type="String"/>
-            <field name="RAM"/>
-            <field name="Capacity"/>
-            <field name="CATEGORY"/>
-            <field name="COLOR"/>
+            <field name="RAM" type="String"/>
+            <field name="Capacity" type="String"/>
+            <field name="CATEGORY" type="String"/>
+            <field name="COLOR" type="String"/>
         </record>
     </data-file>
 </data-files>
