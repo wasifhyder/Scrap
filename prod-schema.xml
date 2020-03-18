@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<data-files xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/datafiles.xsd">
+    <data-file name="prod-schema" separator-style="comma">
+        <record name="Product Code" limit="many">
+            <field name="DESCRIPTION" type="String"/>
+            <field name="BRAND" type="String"/>
+            <field name="RAM"/>
+            <field name="Capacity"/>
+            <field name="CATEGORY"/>
+            <field name="COLOR"/>
+        </record>
+    </data-file>
+</data-files>
