@@ -2,7 +2,7 @@
  
 <data-files xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/datafiles.xsd">
-    <data-file name="prod-schema" separator-style="comma">
+    <data-file name="wasifprodtest" separator-style="fixed-record" type-code="text">
         <record name="Product Code" limit="many">
             <field name="DESCRIPTION" type="String"/>
             <field name="BRAND" type="String"/>
