@@ -1,15 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" ?>
- 
-<data-files xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/datafiles.xsd">
-    <data-file name="wasifprodtest" separator-style="fixed-record" type-code="text">
-        <record name="Product Code" limit="many">
-            <field name="DESCRIPTION" type="String"/>
-            <field name="BRAND" type="String"/>
-            <field name="RAM" type="String"/>
-            <field name="Capacity" type="String"/>
-            <field name="CATEGORY" type="String"/>
-            <field name="COLOR" type="String"/>
-        </record>
-    </data-file>
-</data-files>
+<data-file name="Product" separator-style="delimited" type-code="UTF-8"
+    delimiter="&#009;" text-delimiter=""
+    description="this takes the product data from doba file"
+    has-header="true">
+    <record name="Product">
+        <field name="productId" ignored="false" type="String"/>
+        <field name="primaryProductCategoryId" expression="true"
+            default-value="dropShip" type="String"/>
+        <field name="productTypeId" expression="true"
+            default-value="FINISHED_GOOD" type="String"/>
+        <field name="sku" ignored="true" type="String"/>
+        <field name="description" ignored="false" type="String"/>
+        <field name="categories" ignored="true" type="String"/>
+        <field name="image_url" ignored="true" type="String"/>
+        <field name="brandName" ignored="false" type="String"/>
+        <field name="longDescription" ignored="false" type="String"/>
+        <field name="details" ignored="true" type="String"/>
+        <field name="weight" ignored="false" type="String"/>
+        <field name="weightUomId" expression="true" default-value="WT_lb"
+            type="String"/>
+        <field name="dimensions" ignored="true" type="String"/>
+        <field name="going" ignored="true" type="String"/>
+        <field name="refurb" ignored="true" type="String"/>
+        <field name="freight" ignored="true" type="String"/>
+        <field name="productName" ignored="false" type="String"/>
+        <field name="map" ignored="true" type="String"/>
+        <field name="price" ignored="true" type="String"/>
+        <field name="msrp" ignored="true" type="String"/>
+        <field name="quantityIncluded" expression="true" default-value="1"
+            type="String"/>
+        <field name="quantity" ignored="true" type="String"/>
+        <field name="est_avail" ignored="true" type="String"/>
+        <field name="expected_shipping_cost" ignored="true" type="String"/>
+        <field name="expected_drop_ship_fee" ignored="true" type="String"/>
+        <field name="upc" ignored="true" type="String"/>
+        <field name="item_id" ignored="true" type="String"/>
+        <field name="isVirtual" expression="true" default-value="N"
+            type="String"/>
+        <field name="isVariant" expression="true" default-value="N"
+            type="String"/>
+    </record>
+</data-file>
